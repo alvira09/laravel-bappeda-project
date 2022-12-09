@@ -14,4 +14,10 @@ class kelurahan extends Model
     {
         return $this->belongsTo(formAspirasi::class, 'aspirasi_id', 'id');
     }
+    public function user()
+    {
+      
+        return $this->hasMany(User::class, 'kelurahan_id', 'id');
+       
+    }
 }

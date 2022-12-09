@@ -12,6 +12,15 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    public function formAspirasi()
+    {
+        return $this->belongsTo(formAspirasi::class, 'user_id', 'id');
+    }
+    public function kelurahan()
+    {
+        return $this->belongsTo(kelurahan::class, 'kelurahan');
+    }
+
     /**
      * The attributes that are mass assignable.
      *
