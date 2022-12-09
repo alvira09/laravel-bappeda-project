@@ -13,10 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('kelurahans', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->timestamps();
+        Schema::table('form_aspirasis', function (Blueprint $table) {
+            $table->unsignedBigInteger('kelurahan_id')->after('users_id');
+            $table->foreign('kelurahan_id')->references('id')->on('kelurahans');
         });
     }
 
@@ -27,6 +26,9 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kelurahans');
+        Schema::table('form_aspirasis', function (Blueprint $table) {
+            $table->dropForeign(['kelurahan_id']);
+            $table->dropColumn('kelurahan_id');
+        });
     }
 };

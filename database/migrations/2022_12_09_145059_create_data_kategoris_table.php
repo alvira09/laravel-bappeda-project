@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class TambahKolomDiTabelUser extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class TambahKolomDiTabelUser extends Migration
      */
     public function up()
     {
-        Schema::table('users', function(Blueprint $table) {
-            $table->string('username', 15)->after('id')->nullable()->unique();
+        Schema::create('data_kategories', function (Blueprint $table) {
+            $table->id();            
+            $table->timestamps();
         });
-
     }
 
     /**
@@ -26,8 +26,6 @@ class TambahKolomDiTabelUser extends Migration
      */
     public function down()
     {
-        Schema::table('users', function(Blueprint $table) {
-            $table->dropColumn('username');
-        });
+        Schema::dropIfExists('data_kategoris');
     }
 };

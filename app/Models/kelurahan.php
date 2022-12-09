@@ -10,8 +10,8 @@ class kelurahan extends Model
     use HasFactory;
 
 
-    public function masyarakat()
+    public function formAspirasi()
     {
-        return $this->belongsTo(masyarakat::class, 'kmasyarakat_id', 'id');
+        return $this->belongsTo(formAspirasi::class, 'aspirasi_id', 'id');
     }
 }

@@ -13,10 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('kelurahans', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->timestamps();
+        Schema::table('data_kategoris', function (Blueprint $table) {
+            $table->unsignedBigInteger('aspirasi_id');
+            $table->foreign('aspirasi_id')->references('id')->on('data_kategoris');
         });
     }
 
@@ -27,6 +26,9 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kelurahans');
+        Schema::table('data_kategoris', function (Blueprint $table) {
+            $table->dropForeign(['aspirasi_id']);
+            $table->dropColumn('aspirasi_id');
+        });
     }
 };
