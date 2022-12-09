@@ -14,6 +14,12 @@ class FormAspirasiSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $data = [
+            'nama' => 'Galih',
+            'penyebab' => 'Jalan Rusak',
+            'lokasi' => 'Jalan Raya',
+
+
+        ];
     }
 }

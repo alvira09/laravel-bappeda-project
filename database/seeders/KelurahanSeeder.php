@@ -2,10 +2,11 @@
 
 namespace Database\Seeders;
 
+use App\Models\kelurahan;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class KeluarahanSeeder extends Seeder
+class KelurahanSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +15,5 @@ class KeluarahanSeeder extends Seeder
      */
     public function run()
     {
-        //
     }
 }
