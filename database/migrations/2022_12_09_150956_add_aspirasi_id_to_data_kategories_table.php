@@ -13,9 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('data_kategoris', function (Blueprint $table) {
+        Schema::table('data_kategories', function (Blueprint $table) {
             $table->unsignedBigInteger('aspirasi_id');
-            $table->foreign('aspirasi_id')->references('id')->on('data_kategoris');
+            $table->foreign('aspirasi_id')->references('id')->on('form_aspirasis');
         });
     }
 
@@ -26,7 +26,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('data_kategoris', function (Blueprint $table) {
+        Schema::table('data_kategories', function (Blueprint $table) {
             $table->dropForeign(['aspirasi_id']);
             $table->dropColumn('aspirasi_id');
         });
