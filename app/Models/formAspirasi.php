@@ -10,9 +10,8 @@ class formAspirasi extends Model
     use HasFactory;
 
 
-    public function dataAspirasi()
+    public function keluarahan()
     {
-        return $this->hasMany(dataAspirasi::class, 'aspirasi_id', 'id');
+        return $this->hasMany(keluarahan::class, 'kelurahan_id', 'id');
     }
-
 }
