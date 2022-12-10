@@ -17,7 +17,7 @@ class formAspirasi extends Model
     
     public function opds()
     {
-        return $this->hasMany(opds::class, 'opd_id', 'id');
+        return $this->belongsToMany(opds::class, 'opd_id', 'id');
     }
 
     public function user(){

@@ -11,6 +11,6 @@ class opd extends Model
 
     public function formAspirasi()
     {
-        return $this->hasMany(formAspirasi::class, 'opd_id', 'id');
+        return $this->belongsToMany(formAspirasi::class, 'opd_id', 'id');
     }
 }

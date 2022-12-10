@@ -27,5 +27,5 @@ Route::get('/home', [HomeController::class, 'index']);
 
 // route prefix masyarakat
 Route::prefix('masyarakat')->group(function () {
-    Route::get('/masyarakat/dashboard-m', [MasyarakatController::class, 'index']);
+    Route::get('/dashboard-m', [MasyarakatController::class, 'index']);
 });
