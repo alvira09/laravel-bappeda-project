@@ -22,6 +22,9 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::get('/bappeda', 'BappedaController@index')->name('bappeda')->middleware('bappeda');
+Route::get('/kelurahan', 'KelurahanController@index')->name('kelurahan')->middleware('kelurahan');
+Route::get('/masyarakat', 'MasyarakatController@index')->name('masyarakat')->middleware('masyarakat');
 
 Route::get('/home', [HomeController::class, 'index']);
 
