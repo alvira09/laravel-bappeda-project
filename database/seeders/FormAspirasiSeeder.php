@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class FormAspirasiSeeder extends Seeder
 {
@@ -14,12 +15,14 @@ class FormAspirasiSeeder extends Seeder
      */
     public function run()
     {
-        $data = [
-            'nama' => 'Galih',
-            'penyebab' => 'Jalan Rusak',
-            'lokasi' => 'Jalan Raya',
 
-
-        ];
+        DB::table('formAspirasi')->insert([
+            'id'=>'01',
+            'nama'=>'Fasilitas publik',
+            'permasalahan'=>'jalan rusak',
+            'penyebab'=>'kendaraan besar',
+            'lokasi'=>'Dinoyo',
+            'Keterangan'=>'Aspal baru',
+        ]);
     }
 }

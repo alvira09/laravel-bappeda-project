@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\masyarakat;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class MasyarakatSeeder extends Seeder
 {
@@ -16,16 +17,16 @@ class MasyarakatSeeder extends Seeder
     public function run()
     {
         $data = [
-            ['name' => 'Galih',],
-            ['name' => 'Asep',],
-            ['name' => 'Joko',],
-            ['name' => 'Dono',],
+            ['username' => 'LPMK01',], ['password'=> 'malang123',],
+            ['username' => 'LPMK02',], ['password'=> 'malang123',],
 
         ];
 
         foreach ($data as $value) {
             masyarakat::insert([
-                'name' => $value['name'],
+                'id' => $value['id'],
+                'username' => $value['name'],
+                'password'=> $value['password'],
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);
