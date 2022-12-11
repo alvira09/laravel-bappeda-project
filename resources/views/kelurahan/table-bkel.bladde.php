@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <title>Tabel Dinas</title>
+        <title>Tabel Kelurahan</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
 
@@ -18,13 +18,14 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
         <!-- Vendor CSS Files -->
-        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-        <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-        <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
-        <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-        <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-        <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+        <link href="{{ asset('build/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('bulid/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+        <link href="{{ asset ('build/assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+        <link href="{{ asset ('build/assets/vendor/quill/quill.snow.css') }}" rel="stylesheet">
+        <link href="{{ asset('build/assets/vendor/quill/quill.bubble.css') }}" rel="stylesheet">
+        <link href="{{ asset('build/assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+        <link href="{{ asset('build/assets/vendor/simple-datatables/style.css') }}" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
         <!-- Template Main CSS File -->
         <link href="assets/css/style.css" rel="stylesheet">
@@ -46,7 +47,7 @@
                     <img src="assets/img/unnamed.jpg" alt="Profile" class="rounded-circle" width="100" height="100">
                     <div class="row">
                         <div class="col">
-                            <h4 class="d-none d-md-block ps-3">BAPPEDA</h4>
+                            <h4 class="d-none d-md-block ps-3">BAPPEDA.</h4>
                         </div>
                         <div class="col">
                             <span class="d-none d-md-block ps-3">Kota Malang</span>
@@ -121,14 +122,24 @@
 
                                 <div class="col-md-6">
                                     <br>
+                                    <form class="row g-3">
                                         <div class="col-md-6">
                                             <select class="form-select" aria-label="Default select example">
-                                                <option selected>Dinas/OPD</option>
+                                                <option selected>Kelurahan</option>
                                                 <option value="1">One</option>
                                                 <option value="2">Two</option>
                                                 <option value="3">Three</option>
                                             </select>
                                         </div>
+                                        <div class="col-md-6">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Kecamatan</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </form>
                                 </div><!-- End Option Bar -->
             
                                 <div class="col-md-6">
@@ -158,6 +169,7 @@
                                         <th scope="col">Lokasi</th>
                                         <th scope="col">Usulan</th>
                                         <th scope="col">Keterangan</th>
+                                        <th scope="col">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -168,6 +180,7 @@
                                         <td>Jl. Semanggi</td>
                                         <td>Aspal</td>
                                         <td>Banyak Lubang</td>
+                                        <td><button type="button" class="btn btn-primary">Kategori</button></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">2</th>
@@ -176,6 +189,7 @@
                                         <td>Jl. Semanggi</td>
                                         <td>Aspal</td>
                                         <td>Banyak Lubang</td>
+                                        <td><button type="button" class="btn btn-primary">Kategori</button></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">3</th>
@@ -184,6 +198,7 @@
                                         <td>Jl. Semanggi</td>
                                         <td>Aspal</td>
                                         <td>Banyak Lubang</td>
+                                        <td><button type="button" class="btn btn-primary">Kategori</button></td>
                                     </tr>
                                 </tbody>
                             </table><!-- End Table -->
@@ -193,10 +208,6 @@
                                 <nav class="dataTable-pagination">
                                     <ul class="dataTable-pagination-list"></ul>
                                 </nav>
-                                
-                                <div class="dataTable-search">
-                                    <button type="button" class="btn btn-primary">Submit</button>
-                                </div>
                             </div><!-- End Table Bottom -->
 
                             <nav aria-label="Page navigation example">
@@ -211,12 +222,11 @@
                                     <li class="page-item"><a class="page-link" href="#">3</a></li>
                                     <li class="page-item">
                                         <a class="page-link" href="#" aria-label="Next">
-                                            <span aria-hidden="true">&raquo;</span>
+                                        <span aria-hidden="true">&raquo;</span>
                                         </a>
                                     </li>
                                 </ul>
                             </nav>
-
                         </div>
                     </div>
                 </div>
@@ -225,14 +235,15 @@
         </main><!-- End #main -->
 
         <!-- Vendor JS Files -->
-        <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/vendor/chart.js/chart.min.js"></script>
-        <script src="assets/vendor/echarts/echarts.min.js"></script>
-        <script src="assets/vendor/quill/quill.min.js"></script>
-        <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-        <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-        <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="{{ asset ('build/assets/vendor/apexcharts/apexcharts.min.js')}}"></script>
+    <script src="{{ asset ('build/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{ asset ('build/assets/vendor/chart.js/chart.min.js')}}"></script>
+    <script src="{{ asset ('build/assets/vendor/echarts/echarts.min.js')}}"></script>
+    <script src="{{ asset ('build/assets/vendor/quill/quill.min.js')}}"></script>
+    <script src="{{ asset ('build/assets/vendor/simple-datatables/simple-datatables.js')}}"></script>
+    <script src="{{ asset ('build/assets/vendor/tinymce/tinymce.min.js')}}"></script>
+    <script src="{{ asset ('build/assets/vendor/php-email-form/validate.js')}}"></script>
+
 
         <!-- Template Main JS File -->
         <script src="assets/js/main.js"></script>
