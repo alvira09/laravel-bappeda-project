@@ -72,12 +72,12 @@
             </a>
         </li><!-- End Riwayat Nav -->
 
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a class="nav-link collapsed" href="profile.html">
                 <i class="bi bi-person"></i>
                 <span>Akun</span>
             </a>
-        </li><!-- End Profile Page Nav -->
+        </li>End Profile Page Nav -->
 
         <li id="footer">
             <div class="container">
@@ -157,43 +157,62 @@
                   <!-- pop up end -->
                   
                   <div class="row mb-3">
-                  <!--  <label for="inputText" class="col-sm-2 col-form-label"></label> -->
                     <div class="col-sm-12">
                       <textarea class="form-control" style="height: 50px" placeholder="Permasalahan"></textarea>
                     </div>
                   </div>
                   <div class="row mb-3">
-                    <!-- <label for="inputEmail" class="col-sm-2 col-form-label">Email</label> -->
                     <div class="col-sm-12">
                       <textarea class="form-control"  style="height: 75px" placeholder="Penyebab"></textarea>
                     </div>
                   </div>
                   <div class="row mb-3">
-                  <!--  <label for="inputPassword" class="col-sm-2 col-form-label">Password</label> -->
                     <div class="col-sm-12">
                       <textarea class="form-control" style="height: 50px" placeholder="Lokasi"></textarea>
                     </div>
                   </div>
                   <div class="row mb-3">
-                    <!-- <label for="inputNumber" class="col-sm-2 col-form-label">Number</label> -->
                     <div class="col-sm-12">
                       <textarea class="form-control" style="height: 50px" placeholder="Usulan"></textarea>
                     </div>
                   </div>
                   
                   <div class="row mb-3">
-                    <!-- <label for="inputPassword" class="col-sm-2 col-form-label">Textarea</label> -->
                     <div class="col-sm-12">
                       <textarea class="form-control" style="height: 100px" placeholder="Keterangan"></textarea>
                     </div>
                   </div>
-            
 
                   <div style="text-align:right">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <a type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#submitM">Submit</a>
                   </div>
 
                 </form><!-- End General Form Elements -->
+
+                <!-- POP UP -->
+                <div class="modal fade" id="submitM" tabindex="-1">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-3 mx-auto">
+                              <div class="icon-logo">
+                                <i class="bi bi-check-circle-fill " ></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>Data aspirasi telah terkirim.</p>
+                        <p>Silahkan mengakses halaman <a type="button" href="riwayat-m.html">Riwayat</a></p> 
+                      </div>
+                      <div class="modal-footer mx-auto">
+                        <a type="button" class="btn btn-primary" href="dashboard-m.html">Tambah Aspirasi</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- pop up end -->
 
               </div>
             </div>

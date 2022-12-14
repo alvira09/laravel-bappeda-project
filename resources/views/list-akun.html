@@ -46,10 +46,10 @@
                     <img src="assets/img/unnamed.jpg" alt="Profile" class="rounded-circle" width="100" height="100">
                     <div class="row">
                         <div class="col">
-                            <h4 class="d-none d-md-block ps-3">Fulan</h4>
+                            <h4 class="d-none d-md-block ps-3">BAPPEDA</h4>
                         </div>
                         <div class="col">
-                            <span class="d-none d-md-block ps-3">Lowokwaru</span>
+                            <span class="d-none d-md-block ps-3">Kota Malang</span>
                         </div>
                     </div>
                 </a><!-- End Image Profile Nav -->
@@ -57,25 +57,43 @@
                 <br>
 
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="dashboard-k.html">
+                    <a class="nav-link collapsed" href="dashboard-b.html">
                         <i class="bi bi-grid"></i>
                         <span>Dashboard</span>
                     </a>
                 </li><!-- End Dashboard Nav -->
 
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="riwayat-k.html">
-                        <i class="bi bi-clock-history"></i>
-                        <span>Riwayat</span>
+                    <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
                     </a>
-                </li><!-- End Riwayat Nav -->
+                    <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a class="nav-link collapsed" href="table-bkel.html">
+                                <i class="bi bi-circle"></i><span>Kelurahan</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link collapsed" href="table-bkat.html">
+                                <i class="bi bi-circle"></i><span>Kategori</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li><!-- End Tables Nav -->
 
-                <!-- <li class="nav-item">
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="list-akun.html">
+                        <i class="bi bi-person-lines-fill"></i>
+                        <span>List Akun</span>
+                    </a>
+                </li><!-- End Add Profile Page Nav -->
+
+                <li class="nav-item">
                     <a class="nav-link collapsed" href="profile.html">
                         <i class="bi bi-person"></i>
                         <span>Akun</span>
                     </a>
-                </li>End Profile Page Nav -->
+                </li><!-- End Profile Page Nav -->
 
                 <li id="footer">
                     <div class="container">
@@ -98,15 +116,22 @@
                 <div id="logo">
                     <a><img src="http://bappeda.malangkota.go.id/web/wp-content/uploads/2021/04/logo-bappeda_new.png" alt="logo-bappeda" width="400" height="100"></a>
                 </div>
-            </div><!-- End Logo -->
+			</div><!-- End Logo -->
 
             <br>
 
             <section class="section">
-                <div class="col-lg-12">
+                <div class="col-lg-16">
                     <div class="card">
                         <div class="card-body">
-                            <div class="row justify-content-end">
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <br>
+                                        <div class="col-md-6">
+                                            <a type="button" class="btn btn-primary" href="add-akun.html">Tambah Akun</a>
+                                        </div>
+                                </div><!-- End Button -->
             
                                 <div class="col-md-6">
                                     <br>
@@ -130,82 +155,74 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">No.</th>
-                                        <th scope="col">Permasalahan</th>
-                                        <th scope="col">Penyebab</th>
-                                        <th scope="col">Lokasi</th>
-                                        <th scope="col">Usulan</th>
-                                        <th scope="col">Keterangan</th>
+                                        <th scope="col">Nama</th>
+                                        <th scope="col">Username</th>
+                                        <th scope="col">Password</th>
+                                        <th scope="col">Role</th>
                                         <th scope="col">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>Jalan Rusak</td>
-                                        <td>Kendaraan Besar</td>
-                                        <td>Jl. Semanggi</td>
-                                        <td>Aspal</td>
-                                        <td>Banyak Lubang</td>
+                                        <td>Fulan</td>
+                                        <td>user2019</td>
+                                        <td>mantap123</td>
+                                        <td>LPMK</td>
                                         <td>
+                                            <button type="button" class="btn btn-warning"><i class="bi bi-pencil"></i></button>
                                             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#hapus"><i class="bi bi-trash"></i></button>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">2</th>
-                                        <td>Jalan Rusak</td>
-                                        <td>Kendaraan Besar</td>
-                                        <td>Jl. Semanggi</td>
-                                        <td>Aspal</td>
-                                        <td>Banyak Lubang</td>
+                                        <td>Fulan</td>
+                                        <td>user2019</td>
+                                        <td>mantap123</td>
+                                        <td>LPMK</td>
                                         <td>
+                                            <button type="button" class="btn btn-warning"><i class="bi bi-pencil"></i></button>
                                             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#hapus"><i class="bi bi-trash"></i></button>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">3</th>
-                                        <td>Jalan Rusak</td>
-                                        <td>Kendaraan Besar</td>
-                                        <td>Jl. Semanggi</td>
-                                        <td>Aspal</td>
-                                        <td>Banyak Lubang</td>
+                                        <td>Fulan</td>
+                                        <td>user2019</td>
+                                        <td>mantap123</td>
+                                        <td>LPMK</td>
                                         <td>
+                                            <button type="button" class="btn btn-warning"><i class="bi bi-pencil"></i></button>
                                             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#hapus"><i class="bi bi-trash"></i></button>
                                         </td>
                                     </tr>
                                 </tbody>
-                            </table><!-- End Table -->
+                            </table>
 
                             <div class="dataTable-bottom">
                                 <div class="dataTable-info">Showing 1 to 5 of 5 entries</div>
                                 <nav class="dataTable-pagination">
                                     <ul class="dataTable-pagination-list"></ul>
                                 </nav>
-                                <div class="form-check">
-                                    <button type="button" class="btn btn-primary">Submit</button>
-                                </div>
-                            </div><!-- End Table Bottom -->
+                            </div>
 
-                            <div class="row">
-                                <div class="col-md-12 mx-auto">
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination justify-content-center">
-                                            <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Previous">
-                                                <span aria-hidden="true">&laquo;</span>
-                                                </a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Next">
-                                                    <span aria-hidden="true">&raquo;</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div><!-- End Table Bottom 2 -->
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
 
                             <!-- POP UP -->
                             <div class="modal fade" id="hapus" tabindex="-1">
@@ -221,11 +238,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <p>Apakah Anda yakin ingin menghapus aspirasi ini?</p>
+                                            <p>Apakah Anda yakin ingin menghapus akun ini?</p>
                                         </div>
                                         <div class="modal-footer">
                                             <a type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</a>
-                                            <a type="button" class="btn btn-primary" href="dashboard-k.html">Hapus</a>
+                                            <a type="button" class="btn btn-primary" href="list-akun.html">Hapus</a>
                                         </div>
                                     </div>
                                 </div>

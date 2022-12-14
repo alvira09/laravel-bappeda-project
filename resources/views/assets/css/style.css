@@ -266,7 +266,7 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
-.card-title span {
+.ps-3 span {
   color: #899bbd;
   font-size: 14px;
   font-weight: 400;
@@ -845,8 +845,8 @@ h6 {
 }
 
 .dashboard .sales-card .card-icon {
-  color: #4154f1;
-  background: #f6f6fe;
+  color: #022CA2;
+  background: #C1CEF3;
 }
 
 .dashboard .revenue-card .card-icon {
@@ -1304,4 +1304,26 @@ h6 {
   margin-left: -30px;
   /* background: none; */
   background: none;
+}
+
+.icon-logo{
+  color: #14A44D;
+}
+
+.icon-delete{
+  color: #E4A11B;
+}
+
+.modal-body p{
+  text-align: center;
+  font-weight: 600;
+}
+
+.modal-body i {
+  font-size:100px;
+}
+
+.dashboard .card {
+  background-color: #f6f6fe;
+  /* color: #fff; */
 }
