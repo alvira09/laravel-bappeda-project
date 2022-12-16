@@ -159,7 +159,7 @@
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
-                                        <th scope="col">No.</th>
+                                        <th scope="col">OPD</th>
                                         <th scope="col">Permasalahan</th>
                                         <th scope="col">Penyebab</th>
                                         <th scope="col">Lokasi</th>
@@ -169,7 +169,7 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th scope="row">1</th>
+                                        <td>Bappeda</td>
                                         <td>Jalan Rusak</td>
                                         <td>Kendaraan Besar</td>
                                         <td>Jl. Semanggi</td>
@@ -177,7 +177,7 @@
                                         <td>Banyak Lubang</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">2</th>
+                                        <td>Bappeda</td>
                                         <td>Jalan Rusak</td>
                                         <td>Kendaraan Besar</td>
                                         <td>Jl. Semanggi</td>
@@ -185,7 +185,7 @@
                                         <td>Banyak Lubang</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">3</th>
+                                        <td>Bappeda</td>
                                         <td>Jalan Rusak</td>
                                         <td>Kendaraan Besar</td>
                                         <td>Jl. Semanggi</td>
@@ -202,6 +202,7 @@
                                 </nav>
                                 
                                 <div class="dataTable-search">
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#print">Print</button>
                                     <button type="button" class="btn btn-primary">Submit</button>
                                 </div>
                             </div><!-- End Table Bottom -->
@@ -223,6 +224,73 @@
                                     </li>
                                 </ul>
                             </nav>
+
+                            <div class="modal fade" id="print" role="dialog" arialabelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Preview Dokumen </h5>
+                                        </div>
+                                        
+                                        <div class="modal-body">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">No.</th>
+                                                        <th scope="col">OPD</th>
+                                                        <th scope="col">Permasalahan</th>
+                                                        <th scope="col">Penyebab</th>
+                                                        <th scope="col">Lokasi</th>
+                                                        <th scope="col">Usulan</th>
+                                                        <th scope="col">Keterangan</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Bappeda</td>
+                                                        <td>Jalan Rusak</td>
+                                                        <td>Kendaraan Besar</td>
+                                                        <td>Jl. Semanggi</td>
+                                                        <td>Aspal</td>
+                                                        <td>Banyak Lubang</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Bappeda</td>
+                                                        <td>Jalan Rusak</td>
+                                                        <td>Kendaraan Besar</td>
+                                                        <td>Jl. Semanggi</td>
+                                                        <td>Aspal</td>
+                                                        <td>Banyak Lubang</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>Bappeda</td>
+                                                        <td>Jalan Rusak</td>
+                                                        <td>Kendaraan Besar</td>
+                                                        <td>Jl. Semanggi</td>
+                                                        <td>Aspal</td>
+                                                        <td>Banyak Lubang</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <div class="col">
+                                                <div class="col-lg-6">
+                                                    <b6>*Dokumen akan bertipe .excel</b6>
+                                                </div>        
+                                            </div>
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-primary">Export</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- print pop up end -->
 
                         </div>
                     </div>

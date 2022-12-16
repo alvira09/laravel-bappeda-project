@@ -66,18 +66,18 @@
         </li><!-- End Dashboard Nav -->
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="riwayat-m.html">
-                <i class="bi bi-clock-history"></i>
-                <span>Riwayat</span>
+            <a class="nav-link collapsed" href="form-as.html">
+                <i class="bi bi-plus-square"></i>
+                <span>Form Aspirasi</span>
             </a>
-        </li><!-- End Riwayat Nav -->
+        </li><!-- End Form Nav -->
 
-        <!-- <li class="nav-item">
-            <a class="nav-link collapsed" href="profile.html">
-                <i class="bi bi-person"></i>
-                <span>Akun</span>
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="password-m.html">
+                <i class="bi bi-key"></i>
+                <span>Ganti Password</span>
             </a>
-        </li>End Profile Page Nav -->
+        </li><!-- End Password Page Nav -->
 
         <li id="footer">
             <div class="container">
@@ -96,128 +96,142 @@
 
     <main id="main" class="main">
 
-      <div class="pagetitle">
-        <h1 style="text-align:center">Layanan Pendataan Aspirasi Masyarakat </h1>
-      </div><!-- End Page Title -->
+      <div class="container align-right-logo">
+        <div id="logo">
+            <a><img src="http://bappeda.malangkota.go.id/web/wp-content/uploads/2021/04/logo-bappeda_new.png" alt="logo-bappeda" width="400" height="100"></a>
+        </div>
+      </div><!-- End Logo -->
+
+      <br>
 
       <section class="section">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-
+        <div class="col-lg-16">
             <div class="card">
-              <div class="card-body">
-                <br>
-                <!-- General Form Elements -->
-                <form>
-                  <h6 style="text-align:right;">
-                    <button type="button"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Panduan">Panduan <i class="bi bi-question-circle"></i></button>
-                  </h6>
+                <div class="card-body">
+                    <div class="row">
 
-                  <!-- POP UP -->
-                  <div class="modal fade" id="Panduan" role="dialog" arialabelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Panduan</h5>
-                          <button type="button" data-bs-dismiss="modal"><i class="bi bi-x-circle"></i></button>
-                        </div>
-                        
-                        <div class="modal-body">
-                          <div class="row mb-3">
-                            <div class="col-sm-12">
-                              <textarea class="form-control"  style="height: 50px" placeholder="Permasalahan" readonly>Jalan Rusak</textarea>
+                        <div class="col-md-6">
+                            <br>
+                                <div class="col-md-6">
+                                    <a type="button" class="btn btn-primary" href="form-as.html">Tambah Aspirasi</a>
+                                </div>
+                        </div><!-- End Button -->
+    
+                        <div class="col-md-6">
+                            <br>
+                            <div class="row">
+                                <div class="col-md-3 offset-md-3">
+                                    <div class="search-bar">
+                                        <form class="search-form d-flex align-items-center" method="POST" action="#">
+                                            <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+                                            <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
-                          <div class="row mb-3">
-                            <div class="col-sm-12">
-                              <textarea class="form-control"   style="height: 75px" placeholder="Penyebab" readonly>Kendaraan Besar</textarea>
-                            </div>
-                          </div>
-                          <div class="row mb-3">
-                            <div class="col-sm-12">
-                              <textarea class="form-control" style="height: 50px" placeholder="Lokasi" readonly>Jl. Semanggi</textarea>
-                            </div>
-                          </div>
-                          <div class="row mb-3">
-                            <div class="col-sm-12">
-                              <textarea class="form-control"  style="height: 50px" placeholder="Usulan" readonly>Aspal</textarea>
-                            </div>
-                          </div>
-                          
-                          <div class="row mb-3">
-                            <div class="col-sm-12">
-                              <textarea class="form-control" style="height: 100px" placeholder="Keterangan" readonly>Banyak Lubang</textarea>
-                            </div>
-                          </div>
-                        </div>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  <!-- pop up end -->
-                  
-                  <div class="row mb-3">
-                    <div class="col-sm-12">
-                      <textarea class="form-control" style="height: 50px" placeholder="Permasalahan"></textarea>
-                    </div>
-                  </div>
-                  <div class="row mb-3">
-                    <div class="col-sm-12">
-                      <textarea class="form-control"  style="height: 75px" placeholder="Penyebab"></textarea>
-                    </div>
-                  </div>
-                  <div class="row mb-3">
-                    <div class="col-sm-12">
-                      <textarea class="form-control" style="height: 50px" placeholder="Lokasi"></textarea>
-                    </div>
-                  </div>
-                  <div class="row mb-3">
-                    <div class="col-sm-12">
-                      <textarea class="form-control" style="height: 50px" placeholder="Usulan"></textarea>
-                    </div>
-                  </div>
-                  
-                  <div class="row mb-3">
-                    <div class="col-sm-12">
-                      <textarea class="form-control" style="height: 100px" placeholder="Keterangan"></textarea>
-                    </div>
-                  </div>
+                        </div><!-- End Search Bar -->
+    
+                    </div><!-- End Form Bar -->
 
-                  <div style="text-align:right">
-                    <a type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#submitM">Submit</a>
-                  </div>
+                    <br>
 
-                </form><!-- End General Form Elements -->
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Permasalahan</th>
+                                <th scope="col">Penyebab</th>
+                                <th scope="col">Lokasi</th>
+                                <th scope="col">Usulan</th>
+                                <th scope="col">Keterangan</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jalan Rusak</td>
+                                <td>Kendaraan Besar</td>
+                                <td>Jl. Semanggi</td>
+                                <td>Aspal</td>
+                                <td>Banyak Lubang</td>
+                                <td>
+                                  <button type="button" class="btn btn-warning"><i class="bi bi-pencil"></i></button>
+                                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#hapus"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jalan Rusak</td>
+                                <td>Kendaraan Besar</td>
+                                <td>Jl. Semanggi</td>
+                                <td>Aspal</td>
+                                <td>Banyak Lubang</td>
+                                <td>
+                                  <button type="button" class="btn btn-warning"><i class="bi bi-pencil"></i></button>
+                                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#hapus"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jalan Rusak</td>
+                                <td>Kendaraan Besar</td>
+                                <td>Jl. Semanggi</td>
+                                <td>Aspal</td>
+                                <td>Banyak Lubang</td>
+                                <td>
+                                  <button type="button" class="btn btn-warning"><i class="bi bi-pencil"></i></button>
+                                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#hapus"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                <!-- POP UP -->
-                <div class="modal fade" id="submitM" tabindex="-1">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-body">
-                        <div class="container-fluid">
-                          <div class="row">
-                            <div class="col-3 mx-auto">
-                              <div class="icon-logo">
-                                <i class="bi bi-check-circle-fill " ></i>
+                    <div class="dataTable-bottom">
+                        <div class="dataTable-info">Showing 1 to 5 of 5 entries</div>
+                        <nav class="dataTable-pagination">
+                            <ul class="dataTable-pagination-list"></ul>
+                        </nav>
+                    </div>
+
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="modal fade" id="hapus" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                              <div class="modal-body">
+                                  <div class="container-fluid">
+                                      <div class="row">
+                                          <div class="col-3 mx-auto">
+                                              <div class="icon-delete">
+                                                  <i class="bi bi-exclamation-triangle-fill"></i>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <p>Apakah Anda yakin ingin menghapus permasalahan ini?</p>
                               </div>
-                            </div>
+                              <div class="modal-footer">
+                                  <a type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</a>
+                                  <a type="button" class="btn btn-primary" href="dashboard-m.html">Hapus</a>
+                              </div>
                           </div>
-                        </div>
-                        <p>Data aspirasi telah terkirim.</p>
-                        <p>Silahkan mengakses halaman <a type="button" href="riwayat-m.html">Riwayat</a></p> 
                       </div>
-                      <div class="modal-footer mx-auto">
-                        <a type="button" class="btn btn-primary" href="dashboard-m.html">Tambah Aspirasi</a>
-                      </div>
-                    </div>
-                  </div>
+                  </div><!-- pop up end -->
                 </div>
-                <!-- pop up end -->
-
-              </div>
             </div>
-
-          </div>
         </div>
       </section>
 
